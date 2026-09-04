@@ -1,120 +1,61 @@
-# Serene Heights Lahore - Luxury Commercial & Hotel Apartments Web Application
+# Serene Heights Lahore — Luxury Real Estate Web Platform
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Lucide React](https://img.shields.io/badge/Lucide_React-F59E0B?style=for-the-badge&logo=feather&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+[![React](https://img.shields.io/badge/React-18.x-blue?style=flat-square&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-A modern, high-converting, ultra-luxury web clone of the [Serene Heights Lahore](https://www.sereneheightslahore.com/) commercial tower website built from scratch with React, Vite, Tailwind CSS, and Lucide React.
-
----
-
-## 🌟 Core Features
-
-- **🏛️ 21-Storey Architectural Overview**: Complete presentation of Lahore's premier commercial landmark on Gulberg Main Boulevard with LDA approval badges and structural metrics.
-- **📊 Interactive 3-Year Payment Plan Calculator**: Dynamic slider and preset layout selector with real-time Pakistani Rupee (PKR) breakdowns for Down Payment (Booking), 36 Monthly Installments, and Possession amounts.
-- **📐 3D Render vs. CAD Blueprint Visualizer**: Interactive toggle allowing investors to inspect photorealistic 3D elevations and technical high-contrast architectural floorplan schematics (with CAD spec PDF export).
-- **✉️ Live Web3Forms Lead Dispatch**: Integrated lead capture form posting directly to Web3Forms API with client-side validation, error handling, loading spinners, and confirmation modals.
-- **🎨 Official Luxury Brand Aesthetics**: Typography pairing `Cinzel` serif headers with `Montserrat` body copy, styled over deep obsidian (`#0B0C10`), card slate (`#131419`), and champagne gold accents (`#C5A880`).
-- **📱 Fully Responsive Experience**: Glassmorphic sticky header with scroll transitions, mobile drawer navigation, lead-gated brochure download modal, and floating WhatsApp contact widget.
-- **🔍 Full SEO & OpenGraph Optimization**: Preconfigured meta descriptions, keywords, OpenGraph sharing cards, Twitter cards, and semantic HTML structure.
+A high-performance luxury real estate web application modeled after the 21-storey landmark **Serene Heights Lahore** on Gulberg Main Boulevard. Built with a bespoke design system featuring editorial serif typography, obsidian and champagne-gold color palettes, interactive financial calculation engines, and lead acquisition workflows.
 
 ---
 
-## 🏗️ Tech Stack
+## Key Features
 
-- **Framework**: [React 19](https://react.dev/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Typography**: Google Fonts (`Cinzel` & `Montserrat`)
-- **Lead API**: [Web3Forms](https://web3forms.com/)
+- **Luxury Brand Aesthetics:** Custom design system built with Cinzel serif headings, Montserrat body typography, obsidian cards (`#131419`), and brushed champagne-gold accents (`#C5A880`).
+- **Interactive 3-Year Payment Plan Calculator:** Real-time financial estimator supporting Commercial Retail, Corporate Offices, and Hotel Serviced Suites with custom square-footage sliders and PKR milestone breakdowns.
+- **Architectural Blueprint & Render Visualizer:** Interactive switcher toggling between 3D photorealistic architectural perspectives and CAD structural blueprint schematics.
+- **Lead Capture & Inquiry Dispatch:** Multi-field booking form with client-side input validation, country code helpers (+92), unit selection, and direct API submission handling.
+- **Location & Connectivity Radar:** Interactive dark-mode map layout detailing proximity to CBD Lahore, Liberty Market, Kalma Chowk, and Allama Iqbal International Airport.
+- **Joint Venture Consortium Showcase:** Detailed credentials for Fatir Developers, DM Consortium, and FALAH Developers.
+- **Investor Suite Utilities:** Dedicated project brochure download modal, interactive FAQ accordion, and floating direct WhatsApp inquiry triggers.
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
+
+- **Frontend:** React 18, Vite
+- **Styling:** Tailwind CSS, PostCSS, Custom Design Tokens
+- **Icons:** Lucide React
+- **Typography:** Google Fonts (Cinzel, Montserrat)
+- **Deployment & Routing:** Single-Page Application (SPA) configuration with redirect rules
+
+---
+
+## Project Structure
 
 ```text
+serene-heights-lahore/
 ├── public/
-│   ├── _redirects              # SPA redirect rules for Netlify & Vercel
-│   └── favicon.svg             # Brand favicon
+│   └── _redirects              # SPA routing fallback for Netlify/Vercel
 ├── src/
+│   ├── assets/                 # Brand assets and imagery
 │   ├── components/
-│   │   ├── Amenities.jsx       # 8 Luxury amenity highlight cards
-│   │   ├── BrochureModal.jsx   # Interactive brochure download modal
-│   │   ├── Developers.jsx      # Joint venture consortium credibility
-│   │   ├── FloorTypes.jsx      # Tabbed floor zoning & blueprint visualizer
-│   │   ├── Footer.jsx          # Corporate contact, FAQ accordion & WhatsApp CTA
-│   │   ├── Hero.jsx            # High-impact architectural backdrop & primary CTAs
-│   │   ├── InquiryForm.jsx     # Live lead capture form with Web3Forms dispatch
-│   │   ├── Location.jsx        # Landmark proximity badges & dark Google Map
-│   │   ├── Navbar.jsx          # Sticky glassmorphic navbar with mobile drawer
-│   │   ├── Overview.jsx        # Stats ribbon & architectural narrative
-│   │   └── PaymentPlan.jsx     # 3-Year installment calculator with PKR totals
+│   │   ├── Amenities.jsx       # 8-card luxury amenities grid
+│   │   ├── BrochureModal.jsx   # Project brochure download modal
+│   │   ├── Developers.jsx      # Consortium developer profiles
+│   │   ├── FloorTypes.jsx      # Floor anatomy & CAD blueprint visualizer
+│   │   ├── Footer.jsx          # Luxury footer, FAQ & contact information
+│   │   ├── Hero.jsx            # High-impact video/image hero section
+│   │   ├── InquiryForm.jsx     # Lead generation form with API dispatch
+│   │   ├── Location.jsx        # Accessibility map & proximity badges
+│   │   ├── Navbar.jsx          # Sticky glassmorphic navigation header
+│   │   ├── Overview.jsx        # Key project metrics ribbon (21 floors, LDA)
+│   │   └── PaymentPlan.jsx     # Dynamic 36-month installment calculator
 │   ├── data/
-│   │   └── siteData.js         # Centralized dataset for specs, pricing & text
-│   ├── App.jsx                 # Master application layout and state
-│   ├── index.css               # Theme definitions, gold gradients & glass utilities
-│   └── main.jsx                # React DOM entrypoint
-├── index.html                  # SEO, OpenGraph & Google Fonts head configuration
-├── package.json                # Project dependencies & scripts
-├── tailwind.config.js          # Custom gold & serene color palette extensions
-└── vite.config.js              # Vite React configuration
-```
-
----
-
-## 🚀 Quick Start
-
-### 1. Prerequisites
-- [Node.js](https://nodejs.org/) (version 18.0 or higher recommended)
-- `npm` or `yarn`
-
-### 2. Installation
-Clone the repository and install dependencies:
-```bash
-git clone https://github.com/your-username/serene-heights-lahore.git
-cd serene-heights-lahore
-npm install
-```
-
-### 3. Development Server
-Start the local development server:
-```bash
-npm run dev
-```
-Open `http://localhost:5173/` in your browser.
-
-### 4. Production Build
-Compile the optimized production bundle:
-```bash
-npm run build
-```
-Preview the production build locally:
-```bash
-npm run preview
-```
-
----
-
-## 🌐 Production Deployment
-
-### Deploy to Vercel
-1. Push this repository to GitHub / GitLab.
-2. Import the repository into [Vercel](https://vercel.com/).
-3. Framework Preset: **Vite**.
-4. Build Command: `npm run build`.
-5. Output Directory: `dist`.
-6. Click **Deploy**.
-
-### Deploy to Netlify
-1. Connect repository in [Netlify](https://www.netlify.com/).
-2. Build Command: `npm run build`.
-3. Publish Directory: `dist`.
-4. The included `public/_redirects` file automatically handles single-page app routing.
-
----
-
-## 📄 License
-This project is licensed under the MIT License.
+│   │   └── siteData.js         # Centralized project specifications & data
+│   ├── App.jsx                 # Application entry and layout orchestration
+│   ├── index.css               # Design system rules & metallic gradients
+│   └── main.jsx
+├── index.html                  # SEO & Social Graph meta tags
+├── tailwind.config.js          # Brand color tokens & font definitions
+└── vite.config.js
